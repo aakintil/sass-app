@@ -1,0 +1,17 @@
+/////////////////
+// VARIABLES 
+/////////////////
+
+@import "grid";  
+
+$bg-color: rgb( 245, 240, 230 ); 
+$highlight-color: rgb( 61, 115, 119 ); // rgb( 61, 132, 145 ); 
+$sub-text: white; 
+$body-text: black; 
+
+
+.container {
+    @include container();
+    background-color: blue;
+    height: 100vh; 
+}
