@@ -10,21 +10,42 @@ $sub-text: white;
 $body-text: black; 
 
 
+
+/////////////////
+// MIXINS 
+/////////////////
+
+%cover {
+    height: 100vh;  
+    background-repeat: no-repeat;
+    background-position: center; 
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+// Container / Base Styles
 .container {
     @include container();
 }
 
+
+// Navigation Styles
 nav {
     height: 100px; 
-    background-color: red; 
+    background-color: rgba( 0, 0, 0, 0.3 ); 
     display: table;
     width: 100%; 
+    position: fixed; 
 
     ul {
         display: table-cell; 
         vertical-align: middle;
         text-align: center; 
-        
+
         li {
 
             a {
@@ -35,8 +56,12 @@ nav {
     }
 }
 
+
+// Index Section / Page Styles
 .pages {
-    height: 100vh; 
-    background-color: rgba( 150, 200, 250, 0.32 ); 
-    border: 5px solid white; 
+    @extend %cover; 
+}
+
+.intro {
+    background-image: url( '../images/realize.jpeg' );
 }

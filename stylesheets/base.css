@@ -35,34 +35,44 @@
 /**
  * Apply to any column to make it the last one of the current row.
  */
-/* line 13, ../sass/base.scss */
+/* line 18, ../sass/base.scss */
+.pages {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 31, ../sass/base.scss */
 .container {
   width: 100%;
   margin: 0 0;
 }
 
-/* line 17, ../sass/base.scss */
+/* line 37, ../sass/base.scss */
 nav {
   height: 100px;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.3);
   display: table;
   width: 100%;
+  position: fixed;
 }
-/* line 23, ../sass/base.scss */
+/* line 44, ../sass/base.scss */
 nav ul {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-/* line 30, ../sass/base.scss */
+/* line 51, ../sass/base.scss */
 nav ul li a {
   text-decoration: none;
   color: white;
 }
 
-/* line 38, ../sass/base.scss */
-.pages {
-  height: 100vh;
-  background-color: rgba(150, 200, 250, 0.32);
-  border: 5px solid white;
+/* line 65, ../sass/base.scss */
+.intro {
+  background-image: url("../images/realize.jpeg");
 }
