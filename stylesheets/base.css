@@ -35,7 +35,7 @@
 /**
  * Apply to any column to make it the last one of the current row.
  */
-/* line 18, ../sass/base.scss */
+/* line 29, ../sass/base.scss */
 .pages {
   height: 100vh;
   background-repeat: no-repeat;
@@ -46,13 +46,13 @@
   background-size: cover;
 }
 
-/* line 31, ../sass/base.scss */
+/* line 42, ../sass/base.scss */
 .container {
   width: 100%;
   margin: 0 0;
 }
 
-/* line 37, ../sass/base.scss */
+/* line 48, ../sass/base.scss */
 nav {
   height: 100px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -60,19 +60,56 @@ nav {
   width: 100%;
   position: fixed;
 }
-/* line 44, ../sass/base.scss */
+/* line 55, ../sass/base.scss */
 nav ul {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-/* line 51, ../sass/base.scss */
+/* line 62, ../sass/base.scss */
 nav ul li a {
   text-decoration: none;
   color: white;
 }
 
-/* line 65, ../sass/base.scss */
-.intro {
+/* line 76, ../sass/base.scss */
+.realize {
   background-image: url("../images/realize.jpeg");
+}
+
+/* line 80, ../sass/base.scss */
+.distribution {
+  background-image: url("../images/distribution.jpg");
+}
+
+/* line 84, ../sass/base.scss */
+.logistics {
+  background-image: url("../images/logistics.jpg");
+}
+
+/* line 88, ../sass/base.scss */
+.grow {
+  background-image: url("../images/grow.JPG");
+}
+
+/* line 94, ../sass/base.scss */
+.content {
+  display: table;
+  width: 100vh;
+  height: 100vh;
+  margin: 0px auto;
+  text-align: center;
+}
+/* line 101, ../sass/base.scss */
+.content .center {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+/* line 106, ../sass/base.scss */
+.content .center h1 {
+  width: auto;
+  margin: 0 auto;
+  font-size: 50px;
+  text-transform: uppercase;
 }

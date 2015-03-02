@@ -1,3 +1,14 @@
+
+///////////////////////////////////////////////////
+// NOTES ** please read every day 
+///////////////////////////////////////////////////
+%responsive-text {
+    // get FlowType.JS for responsive text if necessary
+    // http://simplefocus.com/flowtype/
+}
+///////////////////////////////////////////////////
+
+
 /////////////////
 // VARIABLES 
 /////////////////
@@ -62,6 +73,41 @@ nav {
     @extend %cover; 
 }
 
-.intro {
+.realize {
     background-image: url( '../images/realize.jpeg' );
+}
+
+.distribution {
+    background-image: url( '../images/distribution.jpg' );
+}
+
+.logistics {
+    background-image: url( '../images/logistics.jpg' );
+}
+
+.grow {
+    background-image: url( '../images/grow.JPG' );
+}
+
+
+
+.content {
+    display: table;
+    width: 100vh;
+    height: 100vh;
+    margin: 0px auto;
+    text-align: center;
+
+    .center {
+        display: table-cell;
+        vertical-align: middle; 
+        color: white; 
+
+        h1 {
+            width: auto;
+            margin: 0 auto;
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+    }
 }
