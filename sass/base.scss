@@ -14,6 +14,7 @@
 /////////////////
 
 @import "grid";  
+@import "responsive"; 
 
 $bg-color: rgb( 245, 240, 230 ); 
 $highlight-color: rgb( 61, 115, 119 ); // rgb( 61, 132, 145 ); 
@@ -110,4 +111,14 @@ nav {
             text-transform: uppercase;
         }
     }
+}
+
+
+// Footer Styles
+footer {
+    background-color: $highlight-color; 
+    height: 50px;
+    text-align: center;
+    color: white; 
+    padding-top: 10px; 
 }
