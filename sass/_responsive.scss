@@ -1,5 +1,20 @@
-.mobile.portrait {
+// need to figure out the best way to break up the view points
+// mobile.portrait, mobile.landscape
+// tablet.portrait, tablet.landscape
+// desktop, tv
+
+// TODO
+// ask if they would want to see responsivenes on the desktop. 
+
+.px-240, 
+.px-320,
+.px-480 {
     nav {
-        background-color: red; 
+
     }
 }
+
+
+
+
+//['240', '320', '480', '640', '720', '960', '1280'

@@ -1,0 +1,253 @@
+/* line 1, ../sass/menu.slide.scss */
+html,
+body,
+.container,
+.content-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 10, ../sass/menu.slide.scss */
+.menu-wrap {
+  left: -80px;
+}
+
+/* line 14, ../sass/menu.slide.scss */
+.menu-wrap a {
+  color: #b8b7ad;
+}
+
+/* line 18, ../sass/menu.slide.scss */
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+  color: #c94e50;
+}
+
+/* line 23, ../sass/menu.slide.scss */
+.content-wrap {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 28, ../sass/menu.slide.scss */
+.content-wrap * {
+  position: relative;
+}
+
+/* line 32, ../sass/menu.slide.scss */
+.content-wrap * ::before {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  content: '';
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  -webkit-transition: opacity 0.4s, -webkit-transform 0s 0.4s;
+  transition: opacity 0.4s, transform 0s 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+/* Menu Button */
+/* line 49, ../sass/menu.slide.scss */
+.menu-button {
+  position: fixed;
+  z-index: 1000;
+  margin: 1em;
+  padding: 0;
+  width: 2em;
+  height: 1.75em;
+  border: none;
+  text-indent: 2.5em;
+  font-size: 1.5em;
+  color: transparent;
+  background: transparent;
+  right: 0;
+}
+
+/* line 64, ../sass/menu.slide.scss */
+.menu-button::before {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
+  background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+  content: '';
+}
+
+/* line 74, ../sass/menu.slide.scss */
+.menu-button:hover {
+  opacity: 0.6;
+}
+
+/* Close Button */
+/* line 79, ../sass/menu.slide.scss */
+.close-button {
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  overflow: hidden;
+  text-indent: 1em;
+  font-size: 0.75em;
+  border: none;
+  background: transparent;
+  color: transparent;
+}
+
+/* line 93, ../sass/menu.slide.scss */
+.close-button::before,
+.close-button::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: #bdc3c7;
+}
+
+/* line 104, ../sass/menu.slide.scss */
+.close-button::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 109, ../sass/menu.slide.scss */
+.close-button::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* Menu */
+/* line 115, ../sass/menu.slide.scss */
+.menu-wrap {
+  position: absolute;
+  z-index: 1001;
+  width: 300px;
+  height: 100%;
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  -webkit-transform: translate3d(-320px, 0, 0);
+  transform: translate3d(-320px, 0, 0);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+/* line 131, ../sass/menu.slide.scss */
+.menu {
+  padding-left: 100px;
+}
+
+/* line 135, ../sass/menu.slide.scss */
+.menu,
+.icon-list {
+  height: 100%;
+}
+
+/* line 140, ../sass/menu.slide.scss */
+.icon-list {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+/* line 145, ../sass/menu.slide.scss */
+.icon-list a {
+  display: block;
+  padding: 0.8em;
+  -webkit-transform: translate3d(0, 500px, 0);
+  transform: translate3d(0, 500px, 0);
+}
+
+/* line 152, ../sass/menu.slide.scss */
+.icon-list,
+.icon-list a {
+  -webkit-transition: -webkit-transform 0s 0.4s;
+  transition: transform 0s 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+/* line 160, ../sass/menu.slide.scss */
+.icon-list a:nth-child(2) {
+  -webkit-transform: translate3d(0, 1000px, 0);
+  transform: translate3d(0, 1000px, 0);
+}
+
+/* line 165, ../sass/menu.slide.scss */
+.icon-list a:nth-child(3) {
+  -webkit-transform: translate3d(0, 1500px, 0);
+  transform: translate3d(0, 1500px, 0);
+}
+
+/* line 170, ../sass/menu.slide.scss */
+.icon-list a:nth-child(4) {
+  -webkit-transform: translate3d(0, 2000px, 0);
+  transform: translate3d(0, 2000px, 0);
+}
+
+/* line 175, ../sass/menu.slide.scss */
+.icon-list a:nth-child(5) {
+  -webkit-transform: translate3d(0, 2500px, 0);
+  transform: translate3d(0, 2500px, 0);
+}
+
+/* line 180, ../sass/menu.slide.scss */
+.icon-list a:nth-child(6) {
+  -webkit-transform: translate3d(0, 3000px, 0);
+  transform: translate3d(0, 3000px, 0);
+}
+
+/* line 185, ../sass/menu.slide.scss */
+.icon-list a span {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+/* Shown menu */
+/* line 191, ../sass/menu.slide.scss */
+.show-menu .menu-wrap {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+/* line 200, ../sass/menu.slide.scss */
+.show-menu .icon-list,
+.show-menu .icon-list a {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+/* line 210, ../sass/menu.slide.scss */
+.show-menu .icon-list a {
+  -webkit-transition-duration: 0.9s;
+  transition-duration: 0.9s;
+}
+
+/* line 215, ../sass/menu.slide.scss */
+.show-menu .content::before {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}

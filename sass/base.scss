@@ -45,8 +45,9 @@ $body-text: black;
 }
 
 
+
 // Navigation Styles
-nav {
+.long-nav {
     height: 100px; 
     background-color: rgba( 0, 0, 0, 0.3 ); 
     display: table;
@@ -57,7 +58,8 @@ nav {
         display: table-cell; 
         vertical-align: middle;
         text-align: center; 
-
+        width: 20%; // unless we change the number of elements ugh
+        
         li {
 
             a {

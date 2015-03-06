@@ -13,98 +13,134 @@
         <!-- LOADING CSS -->
         <link href="stylesheets/reset.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/base.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/menu.slide.css" media="screen, projection" rel="stylesheet" type="text/css" />
     </head>
     <body id="home">
 
         <!-- main container div-->
+
         <div class="container">
 
-            <!-- navigation -->
-            <nav>
-                <ul>
-                    <li><a href=""> OUR APPROACH </a></li>
-                </ul>
-                <ul>
-                    <li><a href=""> OUR STORIES </a></li>
-                </ul>
-                <ul>
-                    <li><a href=""> OUR TEAM </a></li>
-                </ul>
-                <ul>
-                    <li><a href=""> CONTACT US </a></li>
-                </ul>
-            </nav>
+            <!-- Menu Toggle Button For Mobile-->
+            <!--
+<div class="menu-wrap">
+<nav class="menu">
+<div class="icon-list">
+<a href=""> OUR APPROACH </a>
+<a href=""> OUR STORIES </a>
+<a href=""> OUR TEAM </a>
+<a href=""> CONTACT US </a>
+<a href="#"><i class="fa fa-fw fa-star-o"></i><span>Favorites</span></a>
+<a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Alerts</span></a>
+<a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Messages</span></a>
+<a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comments</span></a>
+<a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Analytics</span></a>
+<a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Reading List</span></a>
+</div>
+</nav>
+<button class="close-button" id="close-button">Close Menu</button>
+</div>
 
-            <!-- ///////////////////////// TODO ///////////////////////// -->
-            <!-- /// need to figure out how to do circular navigation /// -->
-            <!-- //////////////////////////////////////////////////////// -->
 
-            <!-- each full width page -->
-            <section class="pages realize">
-                <div class="content">
-                    <div class="center">
-                        <h1>realize true potential through collaboration</h1>
-                        <div class="link"><a href=""> our approach </a></div>      
-                    </div>             
-                </div>
-            </section>
+<button class="menu-button" id="open-button">Open Menu</button>
+-->
 
-            <section class="pages distribution">
-                <div class="content">
-                    <div class="center">
-                        <h1>distribution without borders</h1>
-                        <h5> case study #1: columbia distributing </h5>
-                        <div class="link"><a href=""> our approach </a></div>      
-                    </div>             
-                </div>
-            </section>
+            <div class="content-wrap">
 
-            <section class="pages logistics">
-                <div class="content">
-                    <div class="center">
-                        <h1>more than logistics</h1>
-                        <h5> case study #2: network global </h5>
-                        <div class="link"><a href=""> our approach </a></div>      
-                    </div>             
-                </div>
-            </section>
 
-            <section class="pages grow">
-                <div class="content">
-                    <div class="center">
-                        <h1>all things healthy grow</h1>
-                        <h5> case study #3: new seasons market </h5>
-                        <div class="link"><a href=""> our approach </a></div>      
-                    </div>             
-                </div>
-            </section>
+                <!-- navigation -->
+                <nav class="long-nav">
+                    <ul>
+                        <li><a href="pages/approach.html"> OUR APPROACH </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="pages/stories.html"> OUR STORIES </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/"> LOGO </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="pages/team.html"> OUR TEAM </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="pages/contact.html"> CONTACT US </a></li>
+                    </ul>
+                </nav>
 
-            <!-- footer -->
-            <footer>
-                back to top 
-            </footer>
+                <!-- ///////////////////////// TODO ///////////////////////// -->
+                <!-- /// need to figure out how to do circular navigation /// -->
+                <!-- //////////////////////////////////////////////////////// -->
+
+                <!-- each full width page -->
+                <section class="pages realize">
+                    <div class="content">
+                        <div class="center">
+                            <h1>realize true potential through collaboration</h1>
+                            <div class="link"><a href=""> our approach </a></div>      
+                        </div>             
+                    </div>
+                </section>
+
+                <section class="pages distribution">
+                    <div class="content">
+                        <div class="center">
+                            <h1>distribution without borders</h1>
+                            <h5> case study #1: columbia distributing </h5>
+                            <div class="link"><a href=""> our approach </a></div>      
+                        </div>             
+                    </div>
+                </section>
+
+                <section class="pages logistics">
+                    <div class="content">
+                        <div class="center">
+                            <h1>more than logistics</h1>
+                            <h5> case study #2: network global </h5>
+                            <div class="link"><a href=""> our approach </a></div>      
+                        </div>             
+                    </div>
+                </section>
+
+                <section class="pages grow">
+                    <div class="content">
+                        <div class="center">
+                            <h1>all things healthy grow</h1>
+                            <h5> case study #3: new seasons market </h5>
+                            <div class="link"><a href=""> our approach </a></div>      
+                        </div>             
+                    </div>
+                </section>
+
+                <!-- footer -->
+                <footer>
+                    back to top 
+                </footer>
+            </div>
+
         </div>
-
-
     </body>
 
     <script>
         $( document ).ready(function() {
             $('body').restive({
                 breakpoints: ['240', '320', '480', '640', '720', '960', '1280'],
-                classes: ['240px', '320px', '480px', '640px', '720px', '960px', '1280px'],
+                classes: ['px-240', 'px-320', 'px-480', 'px-640', 'px-720', 'px-960', 'px-1280'],
                 turbo_classes: 'is_mobile=mobile,is_phone=phone,is_tablet=tablet,is_pc=pc',
                 force_dip: true
             });
         }); 
-                            //            $('body').restive({
-                            //                breakpoints: ['10000'],
-                            //                classes: ['restive'],
-                            //                turbo_classes: 'is_pc=pc,is_non_mobile=desktop,is_mobile=mobile,is_phone=phone, is_tablet=tablet,is_portrait=portrait,is_landscape=landscape', 
-                            //                force_dip: true
-                            //            });
+        //            $('body').restive({
+        //                breakpoints: ['10000'],
+        //                classes: ['restive'],
+        //                turbo_classes: 'is_pc=pc,is_non_mobile=desktop,is_mobile=mobile,is_phone=phone, is_tablet=tablet,is_portrait=portrait,is_landscape=landscape', 
+        //                force_dip: true
+        //            });
 
     </script>
+
     <!-- LOADING CUSTOM SCRIPTS -->
     <script src="js/init.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+
 </html>
