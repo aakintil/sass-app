@@ -21,11 +21,10 @@ $highlight-color: rgb( 61, 115, 119 ); // rgb( 61, 132, 145 );
 $sub-text: white; 
 $body-text: black; 
 
-
-
 /////////////////
 // MIXINS 
 /////////////////
+
 
 %cover {
     height: 100vh;  
@@ -39,8 +38,30 @@ $body-text: black;
 }
 
 
+// Fonts
+@font-face {
+    font-family: "Gotham Light";
+    src: url('../fonts/Gotham-Light.otf');
+}
+
+@font-face {
+    font-family: "Gotham Book";
+    src: url('../fonts/Gotham-Book.otf');
+}
+
+@font-face {
+    font-family: "Gotham Medium";
+    src: url('../fonts/Gotham-Medium.otf');
+}
+
+@font-face {
+    font-family: "Gotham Bold";
+    src: url('../fonts/Gotham-Bold.otf');
+}
+
 // Container / Base Styles
 .container {
+    font-family: "Gotham Book";
     @include container();
 }
 
@@ -59,7 +80,7 @@ $body-text: black;
         vertical-align: middle;
         text-align: center; 
         width: 20%; // unless we change the number of elements ugh
-        
+
         li {
 
             a {
@@ -70,6 +91,25 @@ $body-text: black;
     }
 }
 
+.link > a {
+    color: white; 
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 30px; 
+    text-transform: uppercase; 
+}
+
+.link > a:hover {
+    background-color: white; 
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+#logo {
+    img {
+        width: 70px; 
+    }
+}
 
 // Index Section / Page Styles
 .pages {
@@ -107,6 +147,7 @@ $body-text: black;
         color: white; 
 
         .section-header {
+            font-family: "Gotham Medium";
             width: auto;
             margin: 0 auto;
             font-size: 200%;
