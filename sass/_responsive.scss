@@ -6,14 +6,28 @@
 // TODO
 // ask if they would want to see responsivenes on the desktop. 
 
+// mobile hide long nav
 .px-240, 
 .px-320,
 .px-480 {
-    nav {
+    .long-nav ul:not(#logo) {
+        display: none; 
+    }
 
+    .section-header {
+        line-height: 50px; 
+        font-size: 200%;
+        padding: 40px;
     }
 }
 
+.px-240, 
+.px-320 {
+    .section-header {
+        font-size: 150% !important; 
+        background-color: blue; 
+    }
+}
 
 
 

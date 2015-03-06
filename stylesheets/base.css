@@ -35,6 +35,28 @@
 /**
  * Apply to any column to make it the last one of the current row.
  */
+/* line 13, ../sass/_responsive.scss */
+.px-240 .long-nav ul:not(#logo),
+.px-320 .long-nav ul:not(#logo),
+.px-480 .long-nav ul:not(#logo) {
+  display: none;
+}
+/* line 17, ../sass/_responsive.scss */
+.px-240 .section-header,
+.px-320 .section-header,
+.px-480 .section-header {
+  line-height: 50px;
+  font-size: 200%;
+  padding: 40px;
+}
+
+/* line 26, ../sass/_responsive.scss */
+.px-240 .section-header,
+.px-320 .section-header {
+  font-size: 150% !important;
+  background-color: blue;
+}
+
 /* line 30, ../sass/base.scss */
 .pages {
   height: 100vh;
@@ -96,7 +118,7 @@
 /* line 97, ../sass/base.scss */
 .content {
   display: table;
-  width: 100vh;
+  width: 100%;
   height: 100vh;
   margin: 0px auto;
   text-align: center;
@@ -108,10 +130,10 @@
   color: white;
 }
 /* line 109, ../sass/base.scss */
-.content .center h1 {
+.content .center .section-header {
   width: auto;
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 200%;
   text-transform: uppercase;
 }
 
