@@ -21,6 +21,11 @@ $highlight-color: rgb( 61, 115, 119 ); // rgb( 61, 132, 145 );
 $sub-text: white; 
 $body-text: black; 
 
+
+// Type
+$light-shadow: 4px 4px rgba( 0, 0, 0, 0.09);
+$header-padding: 40px 40px 0px 40px;  
+$link-padding: 10px 30px; 
 /////////////////
 // MIXINS 
 /////////////////
@@ -95,7 +100,7 @@ $body-text: black;
     color: white; 
     text-decoration: none;
     border: 1px solid white;
-    padding: 10px 30px; 
+    padding: $link-padding; 
     text-transform: uppercase; 
 }
 
@@ -148,10 +153,17 @@ $body-text: black;
 
         .section-header {
             font-family: "Gotham Medium";
+            text-shadow: $light-shadow; 
             width: auto;
             margin: 0 auto;
             font-size: 200%;
             text-transform: uppercase;
+        }
+
+        .section-sub-header {
+            font-family: "Gotham Light"; 
+            margin-bottom: 50px; 
+            text-shadow: $light-shadow; 
         }
     }
 }

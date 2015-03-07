@@ -35,29 +35,42 @@
 /**
  * Apply to any column to make it the last one of the current row.
  */
-/* line 13, ../sass/_responsive.scss */
+/* line 14, ../sass/_responsive.scss */
 .px-240 .long-nav ul:not(#logo),
 .px-320 .long-nav ul:not(#logo),
 .px-480 .long-nav ul:not(#logo) {
   display: none;
 }
-/* line 17, ../sass/_responsive.scss */
+/* line 18, ../sass/_responsive.scss */
 .px-240 .section-header,
 .px-320 .section-header,
 .px-480 .section-header {
-  line-height: 50px;
+  line-height: 40px;
   font-size: 200%;
+  padding: 40px 40px 0px 40px;
+  margin-bottom: 40px;
+}
+/* line 25, ../sass/_responsive.scss */
+.px-240 .realize .section-header,
+.px-320 .realize .section-header,
+.px-480 .realize .section-header {
   padding: 40px;
 }
+/* line 29, ../sass/_responsive.scss */
+.px-240 .link > a,
+.px-320 .link > a,
+.px-480 .link > a {
+  font-size: 14px;
+}
 
-/* line 26, ../sass/_responsive.scss */
+/* line 36, ../sass/_responsive.scss */
 .px-240 .section-header,
 .px-320 .section-header {
   font-size: 150% !important;
   background-color: blue;
 }
 
-/* line 29, ../sass/base.scss */
+/* line 34, ../sass/base.scss */
 .pages {
   height: 100vh;
   background-repeat: no-repeat;
@@ -84,14 +97,14 @@
   font-family: "Gotham Bold";
   src: url("../fonts/Gotham-Bold.otf");
 }
-/* line 63, ../sass/base.scss */
+/* line 68, ../sass/base.scss */
 .container {
   font-family: "Gotham Book";
   width: 100%;
   margin: 0 0;
 }
 
-/* line 71, ../sass/base.scss */
+/* line 76, ../sass/base.scss */
 .long-nav {
   height: 100px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -99,20 +112,20 @@
   width: 100%;
   position: fixed;
 }
-/* line 78, ../sass/base.scss */
+/* line 83, ../sass/base.scss */
 .long-nav ul {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   width: 20%;
 }
-/* line 86, ../sass/base.scss */
+/* line 91, ../sass/base.scss */
 .long-nav ul li a {
   text-decoration: none;
   color: white;
 }
 
-/* line 94, ../sass/base.scss */
+/* line 99, ../sass/base.scss */
 .link > a {
   color: white;
   text-decoration: none;
@@ -121,38 +134,38 @@
   text-transform: uppercase;
 }
 
-/* line 102, ../sass/base.scss */
+/* line 107, ../sass/base.scss */
 .link > a:hover {
   background-color: white;
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 109, ../sass/base.scss */
+/* line 114, ../sass/base.scss */
 #logo img {
   width: 70px;
 }
 
-/* line 119, ../sass/base.scss */
+/* line 124, ../sass/base.scss */
 .realize {
   background-image: url("../images/realize.jpeg");
 }
 
-/* line 123, ../sass/base.scss */
+/* line 128, ../sass/base.scss */
 .distribution {
   background-image: url("../images/distribution.jpg");
 }
 
-/* line 127, ../sass/base.scss */
+/* line 132, ../sass/base.scss */
 .logistics {
   background-image: url("../images/logistics.jpg");
 }
 
-/* line 131, ../sass/base.scss */
+/* line 136, ../sass/base.scss */
 .grow {
   background-image: url("../images/grow.JPG");
 }
 
-/* line 137, ../sass/base.scss */
+/* line 142, ../sass/base.scss */
 .content {
   display: table;
   width: 100%;
@@ -160,22 +173,29 @@
   margin: 0px auto;
   text-align: center;
 }
-/* line 144, ../sass/base.scss */
+/* line 149, ../sass/base.scss */
 .content .center {
   display: table-cell;
   vertical-align: middle;
   color: white;
 }
-/* line 149, ../sass/base.scss */
+/* line 154, ../sass/base.scss */
 .content .center .section-header {
   font-family: "Gotham Medium";
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.09);
   width: auto;
   margin: 0 auto;
   font-size: 200%;
   text-transform: uppercase;
 }
+/* line 163, ../sass/base.scss */
+.content .center .section-sub-header {
+  font-family: "Gotham Light";
+  margin-bottom: 50px;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.09);
+}
 
-/* line 161, ../sass/base.scss */
+/* line 173, ../sass/base.scss */
 footer {
   background-color: #3d7377;
   height: 50px;

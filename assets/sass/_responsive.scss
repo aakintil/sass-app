@@ -7,6 +7,7 @@
 // ask if they would want to see responsivenes on the desktop. 
 
 // mobile hide long nav
+
 .px-240, 
 .px-320,
 .px-480 {
@@ -15,9 +16,18 @@
     }
 
     .section-header {
-        line-height: 50px; 
+        line-height: 40px; 
         font-size: 200%;
-        padding: 40px;
+        padding: 40px 40px 0px 40px;
+        margin-bottom: 40px;
+    }
+    
+    .realize .section-header {
+        padding: 40px; 
+    }
+
+    .link > a { 
+        font-size: 14px;
     }
 }
 
