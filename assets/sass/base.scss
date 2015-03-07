@@ -64,6 +64,11 @@ $link-padding: 10px 30px;
     src: url('../fonts/Gotham-Bold.otf');
 }
 
+
+
+
+
+
 // Container / Base Styles
 .container {
     font-family: "Gotham Book";
@@ -78,7 +83,8 @@ $link-padding: 10px 30px;
     background-color: rgba( 0, 0, 0, 0.3 ); 
     display: table;
     width: 100%; 
-    position: fixed; 
+    position: fixed !important; 
+    z-index: 50; 
 
     ul {
         display: table-cell; 
@@ -156,7 +162,6 @@ $link-padding: 10px 30px;
             text-shadow: $light-shadow; 
             width: auto;
             margin: 0 auto;
-            font-size: 200%;
             text-transform: uppercase;
         }
 

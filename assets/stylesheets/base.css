@@ -35,13 +35,13 @@
 /**
  * Apply to any column to make it the last one of the current row.
  */
-/* line 14, ../sass/_responsive.scss */
+/* line 15, ../sass/_responsive.scss */
 .px-240 .long-nav ul:not(#logo),
 .px-320 .long-nav ul:not(#logo),
 .px-480 .long-nav ul:not(#logo) {
   display: none;
 }
-/* line 18, ../sass/_responsive.scss */
+/* line 19, ../sass/_responsive.scss */
 .px-240 .section-header,
 .px-320 .section-header,
 .px-480 .section-header {
@@ -50,24 +50,43 @@
   padding: 40px 40px 0px 40px;
   margin-bottom: 40px;
 }
-/* line 25, ../sass/_responsive.scss */
+/* line 26, ../sass/_responsive.scss */
 .px-240 .realize .section-header,
 .px-320 .realize .section-header,
 .px-480 .realize .section-header {
   padding: 40px;
 }
-/* line 29, ../sass/_responsive.scss */
+/* line 30, ../sass/_responsive.scss */
 .px-240 .link > a,
 .px-320 .link > a,
 .px-480 .link > a {
   font-size: 14px;
 }
 
-/* line 36, ../sass/_responsive.scss */
+/* line 38, ../sass/_responsive.scss */
 .px-240 .section-header,
 .px-320 .section-header {
-  font-size: 150% !important;
-  background-color: blue;
+  font-size: 150%;
+}
+
+/* line 45, ../sass/_responsive.scss */
+.px-640 .section-header {
+  font-size: 250%;
+}
+
+/* line 53, ../sass/_responsive.scss */
+.px-720 .section-header {
+  font-size: 300%;
+}
+
+/* line 61, ../sass/_responsive.scss */
+.px-960 .section-header {
+  font-size: 350%;
+}
+
+/* line 68, ../sass/_responsive.scss */
+.px-1280 .section-header {
+  font-size: 400%;
 }
 
 /* line 34, ../sass/base.scss */
@@ -97,35 +116,36 @@
   font-family: "Gotham Bold";
   src: url("../fonts/Gotham-Bold.otf");
 }
-/* line 68, ../sass/base.scss */
+/* line 73, ../sass/base.scss */
 .container {
   font-family: "Gotham Book";
   width: 100%;
   margin: 0 0;
 }
 
-/* line 76, ../sass/base.scss */
+/* line 81, ../sass/base.scss */
 .long-nav {
   height: 100px;
   background-color: rgba(0, 0, 0, 0.3);
   display: table;
   width: 100%;
-  position: fixed;
+  position: fixed !important;
+  z-index: 50;
 }
-/* line 83, ../sass/base.scss */
+/* line 89, ../sass/base.scss */
 .long-nav ul {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   width: 20%;
 }
-/* line 91, ../sass/base.scss */
+/* line 97, ../sass/base.scss */
 .long-nav ul li a {
   text-decoration: none;
   color: white;
 }
 
-/* line 99, ../sass/base.scss */
+/* line 105, ../sass/base.scss */
 .link > a {
   color: white;
   text-decoration: none;
@@ -134,38 +154,38 @@
   text-transform: uppercase;
 }
 
-/* line 107, ../sass/base.scss */
+/* line 113, ../sass/base.scss */
 .link > a:hover {
   background-color: white;
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 114, ../sass/base.scss */
+/* line 120, ../sass/base.scss */
 #logo img {
   width: 70px;
 }
 
-/* line 124, ../sass/base.scss */
+/* line 130, ../sass/base.scss */
 .realize {
   background-image: url("../images/realize.jpeg");
 }
 
-/* line 128, ../sass/base.scss */
+/* line 134, ../sass/base.scss */
 .distribution {
   background-image: url("../images/distribution.jpg");
 }
 
-/* line 132, ../sass/base.scss */
+/* line 138, ../sass/base.scss */
 .logistics {
   background-image: url("../images/logistics.jpg");
 }
 
-/* line 136, ../sass/base.scss */
+/* line 142, ../sass/base.scss */
 .grow {
   background-image: url("../images/grow.JPG");
 }
 
-/* line 142, ../sass/base.scss */
+/* line 148, ../sass/base.scss */
 .content {
   display: table;
   width: 100%;
@@ -173,29 +193,28 @@
   margin: 0px auto;
   text-align: center;
 }
-/* line 149, ../sass/base.scss */
+/* line 155, ../sass/base.scss */
 .content .center {
   display: table-cell;
   vertical-align: middle;
   color: white;
 }
-/* line 154, ../sass/base.scss */
+/* line 160, ../sass/base.scss */
 .content .center .section-header {
   font-family: "Gotham Medium";
   text-shadow: 4px 4px rgba(0, 0, 0, 0.09);
   width: auto;
   margin: 0 auto;
-  font-size: 200%;
   text-transform: uppercase;
 }
-/* line 163, ../sass/base.scss */
+/* line 168, ../sass/base.scss */
 .content .center .section-sub-header {
   font-family: "Gotham Light";
   margin-bottom: 50px;
   text-shadow: 4px 4px rgba(0, 0, 0, 0.09);
 }
 
-/* line 173, ../sass/base.scss */
+/* line 178, ../sass/base.scss */
 footer {
   background-color: #3d7377;
   height: 50px;
