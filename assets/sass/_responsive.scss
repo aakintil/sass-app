@@ -6,16 +6,9 @@
 // TODO
 // ask if they would want to see responsivenes on the desktop. 
 
-// mobile hide long nav
-
 .px-240, 
 .px-320,
 .px-480 {
-
-    .long-nav ul:not(#logo) {
-        display: none; 
-    }
-
     .section-header {
         line-height: 40px; 
         font-size: 200%;
@@ -23,48 +16,66 @@
         margin-bottom: 40px;
     }
 
-    .realize .section-header {
-        padding: 40px; 
-    }
-
     .link > a { 
         font-size: 14px;
     }
 }
 
+// HIDE NON-MOBILE MENU
+.px-240, 
+.px-320, 
+.px-480, 
+.px-640 {
+    .long-nav ul:not(#logo) {
+        display: none; 
+    }
+}
+
+// SHOW MOBILE MENU
+.px-240, 
+.px-320, 
+.px-480, 
+.px-640 {
+    .mobile-menu ul {
+        display: block; 
+    }
+}
+
 .px-240, 
 .px-320 {
-
     .section-header {
         font-size: 150%; 
     }
 }
 
 .px-640 {
-
     .section-header {
         font-size: 250%; 
     }
 }
 
 
-.px-720 {
-
+.px-720, 
+.px-800 {
     .section-header {
         font-size: 300%; 
+    }
+
+    .long-nav {
+        ul li a {
+            font-size: 13px; 
+        }
     }
 }
 
 
 .px-960 {
-
     .section-header {
         font-size: 350%; 
     }
 }
 
 .px-1280 {
-
     .section-header {
         font-size: 400%; 
     }
@@ -72,4 +83,4 @@
 
 
 
-//['240', '320', '480', '640', '720', '960', '1280'
+//['240', '320', '480', '640', '720', '800', '960', '1280'
